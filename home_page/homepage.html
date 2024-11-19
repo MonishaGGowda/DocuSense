@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>DocuSense</title>
-    <link rel="stylesheet" href="homepage.css">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="../pop-up/pop-up.css">
+    <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/pop-up.css' %}">
 </head>
 <body>
     <header-component></header-component>
@@ -16,13 +17,13 @@
 
     <section class="features">
         <div class="feature">
-            <img src="../icons/create.png" alt="Create">
+            <img src="{% static 'images/icons/create.png' %}" alt="Create">
             <h3>New Analysis</h3>
             <button id="openPopupBtn">Create</button>
         </div>
 
         <div class="feature">
-            <img src="../icons/search.png" alt="View">
+            <img src="{% static 'images/icons/search.png' %}" alt="View">
             <h3>View My Analysis</h3>
             <button onclick="loadViewPage()">Show</button>
         </div>
@@ -44,13 +45,14 @@
             <button type="submit" class="submit-btn">Submit</button>
         </div>
     </div>
+    <script>const viewPageUrl = "{% url 'main:view_page' %}";</script>
+
     <footer>
         <p>&copy; Non Copyrighted © 2024 Upload by DocuSense Technologies</p>
     </footer>
-
-    <script src="../pop-up/pop-up.js"></script>
-    <script src="../main.js"></script>
-    <script src="homepage.js"></script>
-    <script src="../header_component/header_component.js" defer></script>
+    <script src="{% static 'js/pop-up.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/homepage.js' %}"></script>
+    <script src="{% static 'js/header_component.js' %}" defer></script>
 </body>
 </html>

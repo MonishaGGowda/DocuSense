@@ -1,8 +1,9 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="annotation.css">
-  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="{% static 'css/annotation.css' %}">
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
   <title>Data Analyse - Annotate Document</title>
 </head>
 <body>
@@ -69,8 +70,8 @@
     <p>&copy; Non Copyrighted © 2024 Upload by DocuSense Technologies</p>
 </footer>
 
-  <script src="../main.js"></script>
-  <script src="annotation.js"></script>
-  <script src="../header_component/header_component.js" defer></script>
+  <script src="{% static js/main.js %}"></script>
+  <script src="{% static js/annotation.js %}"></script>
+  <script src="{% static js/header_component.js %}" defer></script>
 </body>
 </html>

@@ -1,8 +1,9 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="viewpage.css">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="{% static 'css/viewpage.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
     <header-component></header-component>
@@ -23,8 +24,8 @@
     <footer>
         <p>&copy; Non Copyrighted © 2024 Upload by DocuSense Technologies</p>
     </footer>
-    <script src="../main.js"></script>
-    <script src="viewpage.js"></script>
-    <script src="../header_component/header_component.js" defer></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/viewpage.js' %}"></script>
+    <script src="{% static 'js/header_component.js' %}" defer></script>
 </body>
 </html>

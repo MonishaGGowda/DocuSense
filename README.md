@@ -15,3 +15,9 @@ To reduce cognitive load, the interface is divided into clear, manageable sectio
  At the bottom of the page, there is a summary section offering two options: generate insights for the current document or generate insights for all documents. From this page, users can either navigate to the Connections page or return to the List page.
 
 5. Connections Page: The Connections page allows users to view all the annotations they've created and trace them back to the source document. Users can connect annotations by filtering text and relevancy (high or low). Each annotation contains a link that directs back to the original document.
+
+
+Credits:
+*We used https://www.flaticon.com/free-icon/file_1150643 for the search icon on homepage.
+We used https://www.flaticon.com/free-icon/creation_10316499 for the create icon on homepage.
+We used https://www.flaticon.com/free-icon/loupe_4291242 for the magnify icon on List page.*
